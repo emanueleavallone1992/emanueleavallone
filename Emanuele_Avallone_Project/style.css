@@ -1,20 +1,19 @@
 
-h3,h1 {
+/*h3,h1 {
 	margin-bottom: 25;
 	parding: 0;
-}
+}*/
 header {
 	margin: 0px 0px 0px 0px;
 	padding:10px 0px 10px 80px;
-	background-color: black;
-	color: white;
+	background-color: #223a48;
+	color: aliceblue;
 	
 }
 .hero-text {
 	margin: 0px 0px 0px 0px;
 	padding:50px 50px 50px 50px;
-	background-color: aliceblue;
-	color: black;
+	color: #223a48;
 }
 a {
 	background-color: #008CBA;
@@ -26,11 +25,10 @@ a {
 
 }
 .article {
-	max-width:30%;
-	max-height: : 30%;
+	
 	display: inline-block;
 	float:left;
-	padding: 0px 20px;
+	padding: 0px 0px;
 	
 	
 }	
@@ -40,7 +38,7 @@ img{
 	margin: 10px 5px;
 	
 }
-.tech {
+/*.tech {
 	background-color: #008CBA;
 	color: white;
 	margin: 4px 4px;
@@ -48,7 +46,7 @@ img{
 	cursor: pointer;
 	border-radius: 5px;
 
-}
+}*/
 .like{
 	
 	margin: 4px 4px;
@@ -65,6 +63,7 @@ img{
 
 section{
 	float:left;
+	background-color: white;
 }
 footer{
 	padding: 0px 0px;
@@ -78,7 +77,7 @@ footer{
 	bottom: 0%;
 	width: 100%;
 }
-#cook{
+/*#cook{
 
 	color: blue;
 	text-decoration: none;
@@ -90,3 +89,4 @@ footer{
 
 
 }
+*/
