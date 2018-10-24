@@ -45,8 +45,8 @@ img{
 	padding: 5px 5px;
 	cursor: pointer;
 	border-radius: 5px;
-
-}*/
+*/
+}
 .like{
 	
 	margin: 4px 4px;
@@ -76,10 +76,11 @@ footer{
 	position: fixed;
 	bottom: 0%;
 	width: 100%;
+	z-index: 90;
 }
-/*#cook{
+#cook{
 
-	color: blue;
+	color: #337ab7;
 	text-decoration: none;
 	cursor: pointer;
 	background-color: transparent;
@@ -89,4 +90,3 @@ footer{
 
 
 }
-*/

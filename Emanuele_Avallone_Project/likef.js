@@ -4,11 +4,11 @@ var like = document.getElementsByClassName('like');
 
 for ( var i = 0; i < like.length; i++ ) {
 	like[i].addEventListener('click', function(){
-console.log(this.style.backgroundColor);
+
 
 		if(this.style.backgroundColor === "green"){
 			this.style.color = "black";
-			this.style.backgroundColor = "transparent";	
+			this.style.backgroundColor = "white";	
 			
 
 		} else 
