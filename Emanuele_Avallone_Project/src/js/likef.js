@@ -1,3 +1,5 @@
+const $=require('jquery');
+console.log('ciao');
 //raccolgo tutti gli elementi della classe like
 var like = document.getElementsByClassName('like');
 //mi giro tutti gli elemtni della classe like e se avviene l'evento click attiva la funzione likef
@@ -13,10 +15,15 @@ for ( var i = 0; i < like.length; i++ ) {
 
 		} else 
 			this.style.backgroundColor = "green";
-			this.style.color = "white";
+			this.style.color = "white";    
 			
 	});
 }
+ function doAjax(){
+ 	$.ajax({
+yrl: 
 
+ 	})
+ }
 
 
