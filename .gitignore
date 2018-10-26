@@ -28,5 +28,3 @@ Servers/
 .recommenders/
 node_modules/
 node_modules/**
-Dist/
-Dist/**

@@ -10366,12 +10366,12 @@ return jQuery;
 
 },{}],2:[function(require,module,exports){
 const $=require('jquery');
-console.log('ciao');
+
 //raccolgo tutti gli elementi della classe like
 var like = document.getElementsByClassName('like');
 //mi giro tutti gli elemtni della classe like e se avviene l'evento click attiva la funzione likef
 
-for ( var i = 0; i < like.length; i++ ) {
+/*for ( var i = 0; i < like.length; i++ ) {
 	like[i].addEventListener('click', function(){
 
 
@@ -10385,9 +10385,22 @@ for ( var i = 0; i < like.length; i++ ) {
 			this.style.color = "white";    
 			
 	});
-}
+}*/
 
+$('#cook').on('click', function(){
+	console.log('ciao');
+    $('.cookie').fadeOut();
+});
 
+$.ajax({
+	url:'text.json',
+	method: 'GET',
+	dataType: 'json',
+	success: function (articoli){
+	 for (var i = 0; i < articoli.length; i++) {
+        $('#prova').append("<p>" + articoli[i].text + "<p>");
+      }  
+	} 
 
-
+});
 },{"jquery":1}]},{},[2]);

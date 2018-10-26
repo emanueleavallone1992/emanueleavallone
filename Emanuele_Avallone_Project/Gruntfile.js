@@ -17,19 +17,45 @@ grunt.initConfig({
     	scripts : {
     		files:'src/js/likef.js',
     		tasks:'browserify'
-    	}
+    	},
+        lesscss:{
+            files:'src/css/style.less',
+            tasks: 'less'
+        }
 
     },
     babel:{
+        options: {
+            presets: ['env']
+        },
     	dist:{
-    	files:{
-    	'src/js/bundle-es5.js':'src/js/bundle.js'
-    }
-    }
+        	files:{
+        	   'src/js/bundle-es5.js':'src/js/bundle.js'
+            }
+        }
     },
     cssmin:{
-    	'src/css/mini.min.css': 'src/css/style.css'
-
+        dist: {
+            files: {
+                'Dist/css/mini.min.css': [
+                    'node_modules/bootstrap/dist/css/bootstrap.css',
+                    'src/css/style.css']
+            }
+        }
+    },	
+    less:{
+        dist: {
+            files: {
+                'src/css/style.css': 'src/css/style.less'
+            }
+        }
+    },
+    uglify:{
+        dist:{
+            files: {
+                'Dist/js/newbundle.min.js': 'src/js/bundle-es5.js'
+            }
+        }
     }
 
 });
@@ -39,11 +65,13 @@ grunt.loadNpmTasks('grunt-browserify');
 grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-contrib-cssmin');
 grunt.loadNpmTasks('grunt-babel');
+grunt.loadNpmTasks('grunt-contrib-less');
+grunt.loadNpmTasks('grunt-contrib-uglify');
 
 
-/*grunt.task.registerTask('start',['babel']);
+
 grunt.task.registerTask('develop',['watch']);
-grunt.task.registerTask('build',['cssmin','babel','uglify','serve']);*/
-grunt.task.registerTask('build',['serve']);
+grunt.task.registerTask('build',['cssmin','babel','uglify','serve']);
+
 
 };
