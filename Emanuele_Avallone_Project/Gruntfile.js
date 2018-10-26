@@ -61,7 +61,7 @@ grunt.initConfig({
 });
 
 grunt.loadNpmTasks('grunt-serve');
-grunt.loadNpmTasks('grunt-browserify');
+grunt.loadNpmTasks('grunt-browserify'); 
 grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-contrib-cssmin');
 grunt.loadNpmTasks('grunt-babel');

@@ -10388,7 +10388,6 @@ var like = document.getElementsByClassName('like');
 }*/
 
 $('#cook').on('click', function(){
-	console.log('ciao');
     $('.cookie').fadeOut();
 });
 
@@ -10402,5 +10401,5 @@ $.ajax({
       }  
 	} 
 
-});
+});    
 },{"jquery":1}]},{},[2]);

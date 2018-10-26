@@ -9958,7 +9958,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   }*/
 
 		$('#cook').on('click', function () {
-			console.log('ciao');
 			$('.cookie').fadeOut();
 		});
 
