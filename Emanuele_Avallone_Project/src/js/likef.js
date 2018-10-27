@@ -35,6 +35,7 @@ $.ajax({
 	} 
 
 });*/
+
 $.ajax({
 	url:'art1.json',
 	method: 'GET',
@@ -42,6 +43,51 @@ $.ajax({
 	success: function (articolo){ 
 	
         $('#articolo1').append("<h3>" + articolo[0].text + "</h3>");
-        $('#articolo1').append("<img src=" + articolo[1].text + ">");		 
-		  $('#articolo1').append("<p>" + articolo[2].text + "</p>");
-      }});     
+        $('#articolo1').append("<img src=" + articolo[1].text + ">");
+        $('#articolo1').append("<h4><span class="+"'label label-primary tech'"+">" + articolo[2].text + "</span></h4>");		 
+		$('#articolo1').append("<p>" + articolo[3].text + "</p>");
+		$('#articolo1').append("<button type="+"'button' class="+"'btn btn-default like'>"+ articolo[4].text +"</button>");
+
+      }});  
+
+$.ajax({
+	url:'art2.json',
+	method: 'GET',
+	dataType: 'json',
+	success: function (articolo){ 
+	
+        $('#articolo2').append("<h3>" + articolo[0].text + "</h3>");
+        $('#articolo2').append("<img src=" + articolo[1].text + ">");
+        $('#articolo2').append("<h4><span class="+"'label label-primary tech'"+">" + articolo[2].text + "</span></h4>");		 
+		$('#articolo2').append("<p>" + articolo[3].text + "</p>");
+		$('#articolo2').append("<button type="+"'button' class="+"'btn btn-default like'>"+ articolo[4].text +"</button>");
+
+      }});
+
+$.ajax({
+	url:'art3.json',
+	method: 'GET',
+	dataType: 'json',
+	success: function (articolo){ 
+	
+        $('#articolo3').append("<h3>" + articolo[0].text + "</h3>");
+        $('#articolo3').append("<img src=" + articolo[1].text + ">");
+        $('#articolo3').append("<h4><span class="+"'label label-primary tech'"+">" + articolo[2].text + "</span></h4>");		 
+		$('#articolo3').append("<p>" + articolo[3].text + "</p>");
+		$('#articolo3').append("<button type="+"'button' class="+"'btn btn-default like'>"+ articolo[4].text +"</button>");
+
+      }});
+
+$.ajax({
+	url:'art4.json',
+	method: 'GET',
+	dataType: 'json',
+	success: function (articolo){ 
+	
+        $('#articolo4').append("<h3>" + articolo[0].text + "</h3>");
+        $('#articolo4').append("<img src=" + articolo[1].text + ">");
+        $('#articolo4').append("<h4><span class="+"'label label-primary tech'"+">" + articolo[2].text + "</span></h4>");		 
+		$('#articolo4').append("<p>" + articolo[3].text + "</p>");
+		$('#articolo4').append("<button type="+"'button' class="+"'btn btn-default like'>"+ articolo[4].text +"</button>");
+
+      }});
