@@ -1,8 +1,5 @@
     
-/*h3,h1 {
-	margin-bottom: 25;
-	padding: 0;
-}*/
+
 @color-1: #223a48; /*blu notte*/
 @color-2: #008CBA; /**/
 @color-3: transparent;/*sfondo trasparente per il like*/
@@ -10,9 +7,13 @@
 @color-5: black;
 @color-6: white;
 @color-7: #337ab7;
+@margin0: 0px;
+@bordocurvo: 5px;
+@curs: pointer;
+@w100: 100%;
 
 header {
-	margin: 0px 0px 0px 0px;
+	margin: @margin0;
 	padding:10px 0px 10px 80px;
 	background-color: @color-1;
 	color: @color-2; 
@@ -21,7 +22,7 @@ header {
 	color: @color-4;
 }
 .hero-text {
-	margin: 0px 0px 0px 0px;
+	margin: @margin0;
 	padding:0px 50px 50px 50px;
 	color: @color-4;
 } 
@@ -30,23 +31,15 @@ a {
 	
 	margin: 4px 4px;
 
-	cursor: pointer;
-	border-radius: 5px;
+	cursor: @curs;
+	border-radius: @bordocurvo;
 }
 	
 img{
-	width: 100%;
+	width: @w100;
 	display: inline-block;	
 }
-/*.tech {
-	background-color: #008CBA;
-	color: white;
-	margin: 4px 4px;
-	padding: 5px 5px;
-	cursor: pointer;
-	border-radius: 5px;
 
-}*/
 .like{
 	
 	/*margin: 4px 4px;*/
@@ -54,9 +47,9 @@ img{
 	cursor: pointer;
 	border-style: solid;
 	border-color: grey;
-	border-radius: 5px;
+	border-radius: @bordocurvo;
 	border-width: 1px;
-	background-color: transparent;
+	background-color: @color-3;
 	color: @color-5;
 }
 
@@ -72,20 +65,20 @@ footer{
 
 }
 .cookie{
-	margin: 0px 0px 0px 0px;
+	margin: @margin0;
 	padding-left: 60px;
 	background-color:  @color-1;
 	color: @color-6;
 	position: fixed;
 	bottom: 0%;
-	width: 100%;
+	width: @w100;
 	z-index: 90;
 }
 #cook{
 
 	color: @color-7;
 	text-decoration: none;
-	cursor: pointer;
+	cursor: @curs;
 	background-color: @color-3;
 	border: 0;
 	margin: 0;
@@ -94,13 +87,15 @@ footer{
 } 
 .row{
 	
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 60px;
+	padding-right: 60px;
 	position: relative;
+	margin-right: 0px;
+	margin-left: 0px;
 	
 }
 .jumbotron{
-	padding: 60px;
+	padding: 60px 90px 60px 60px;
 	margin-bottom: 70px;
 }
 
@@ -115,7 +110,7 @@ footer{
 	font-size: 50%;
 	font-weight: 700;
 	line-height: 1;
-	color: #fff;
+	color: @color-6;
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: baseline;
