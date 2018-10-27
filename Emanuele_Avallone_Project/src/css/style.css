@@ -65,6 +65,9 @@ footer {
   margin: 0;
   padding: 0;
 }
+.display-4 {
+  font-weight: 400;
+}
 .row {
   padding-left: 60px;
   padding-right: 60px;
@@ -92,4 +95,7 @@ footer {
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.25em;
+}
+.lead {
+  font-weight: 400;
 }

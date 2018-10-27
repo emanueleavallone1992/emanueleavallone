@@ -23,7 +23,7 @@ var like = document.getElementsByClassName('like');
 $('#cook').on('click', function(){
     $('.cookie').fadeOut();
 });
-
+/*
 $.ajax({
 	url:'text.json',
 	method: 'GET',
@@ -34,4 +34,14 @@ $.ajax({
       }  
 	} 
 
-});    
+});*/
+$.ajax({
+	url:'art1.json',
+	method: 'GET',
+	dataType: 'json',
+	success: function (articolo){ 
+	
+        $('#articolo1').append("<h3>" + articolo[0].text + "</h3>");
+        $('#articolo1').append("<img src=" + articolo[1].text + ">");		 
+		  $('#articolo1').append("<p>" + articolo[2].text + "</p>");
+      }});     
