@@ -3,19 +3,30 @@
 	margin-bottom: 25;
 	padding: 0;
 }*/
+@color-1: #223a48; /*blu notte*/
+@color-2: #008CBA; /**/
+@color-3: transparent;/*sfondo trasparente per il like*/
+@color-4: #e9ecef; /*sfondo di hello world*/
+@color-5: black;
+@color-6: white;
+@color-7: #337ab7;
+
 header {
 	margin: 0px 0px 0px 0px;
 	padding:10px 0px 10px 80px;
-	background-color: #223a48;
-	color: aliceblue; 
+	background-color: @color-1;
+	color: @color-2; 
+}
+.project{
+	color: @color-4;
 }
 .hero-text {
 	margin: 0px 0px 0px 0px;
 	padding:0px 50px 50px 50px;
-	color: #223a48;
+	color: @color-4;
 } 
 a {
-	background-color: #008CBA;
+	background-color: @color-2;
 	
 	margin: 4px 4px;
 
@@ -46,13 +57,13 @@ img{
 	border-radius: 5px;
 	border-width: 1px;
 	background-color: transparent;
-	color: black;
+	color: @color-5;
 }
 
 
 section{
 	float:left;
-	background-color: white;
+	background-color: @color-6;
 }
 footer{
 	padding: 15px;
@@ -63,8 +74,8 @@ footer{
 .cookie{
 	margin: 0px 0px 0px 0px;
 	padding-left: 60px;
-	background-color: #223A48;
-	color: white;
+	background-color:  @color-1;
+	color: @color-6;
 	position: fixed;
 	bottom: 0%;
 	width: 100%;
@@ -72,10 +83,10 @@ footer{
 }
 #cook{
 
-	color: #337ab7;
+	color: @color-7;
 	text-decoration: none;
 	cursor: pointer;
-	background-color: transparent;
+	background-color: @color-3;
 	border: 0;
 	margin: 0;
 	padding: 0;
@@ -98,10 +109,10 @@ footer{
 	padding-left: 60px;
 }
 .tech{
-	background-color:  #337ab7;
+	background-color:  @color-7;
 	display: inline;
 	padding: .2em .6em .3em;
-	font-size: 75%;
+	font-size: 50%;
 	font-weight: 700;
 	line-height: 1;
 	color: #fff;

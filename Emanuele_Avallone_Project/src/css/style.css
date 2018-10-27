@@ -2,16 +2,23 @@
 	margin-bottom: 25;
 	padding: 0;
 }*/
+/*blu notte*/
+/**/
+/*sfondo trasparente per il like*/
+/*sfondo di hello world*/
 header {
   margin: 0px 0px 0px 0px;
   padding: 10px 0px 10px 80px;
   background-color: #223a48;
-  color: aliceblue;
+  color: #008CBA;
+}
+.project {
+  color: #e9ecef;
 }
 .hero-text {
   margin: 0px 0px 0px 0px;
   padding: 0px 50px 50px 50px;
-  color: #223a48;
+  color: #e9ecef;
 }
 a {
   background-color: #008CBA;
@@ -55,7 +62,7 @@ footer {
 .cookie {
   margin: 0px 0px 0px 0px;
   padding-left: 60px;
-  background-color: #223A48;
+  background-color: #223a48;
   color: white;
   position: fixed;
   bottom: 0%;
@@ -88,7 +95,7 @@ footer {
   background-color: #337ab7;
   display: inline;
   padding: 0.2em 0.6em 0.3em;
-  font-size: 75%;
+  font-size: 50%;
   font-weight: 700;
   line-height: 1;
   color: #fff;
