@@ -25,23 +25,12 @@ $('.btn, .btn-default').on('click',event =>{
 });
 
 $('#cook').on('click', function(){
-    $('.cookie').fadeOut();
+    $('.cookie').fadeOut('slow');
 });
-/*
-$.ajax({
-	url:'text.json',
-	method: 'GET',
-	dataType: 'json',
-	success: function (articoli){
-	 for (var i = 0; i < articoli.length; i++) {
-        $('#prova').append("<p>" + articoli[i].text + "<p>");
-      }  
-	} 
 
-});*/
 
 $.ajax({
-	url:'art1.json',
+	url:'articoli.json',
 	method: 'GET',
 	dataType: 'json',
 	success: function (articolo){ 
@@ -50,48 +39,20 @@ $.ajax({
         $('#articolo1').append("<img src=" + articolo[1].text + ">");
         $('#articolo1').append("<h4><span class="+"'label label-primary tech'"+">" + articolo[2].text + "</span></h4>");		 
 		$('#articolo1').append("<p>" + articolo[3].text + "</p>");
-		
 
-      }});  
+		 $('#articolo2').append("<h3>" + articolo[4].text + "</h3>");
+        $('#articolo2').append("<img src=" + articolo[5].text + ">");
+        $('#articolo2').append("<h4><span class="+"'label label-primary tech'"+">" + articolo[6].text + "</span></h4>");		 
+		$('#articolo2').append("<p>" + articolo[7].text + "</p>");
 
-$.ajax({
-	url:'art2.json',
-	method: 'GET',
-	dataType: 'json',
-	success: function (articolo){ 
-	
-        $('#articolo2').append("<h3>" + articolo[0].text + "</h3>");
-        $('#articolo2').append("<img src=" + articolo[1].text + ">");
-        $('#articolo2').append("<h4><span class="+"'label label-primary tech'"+">" + articolo[2].text + "</span></h4>");		 
-		$('#articolo2').append("<p>" + articolo[3].text + "</p>");
-		
+		$('#articolo3').append("<h3>" + articolo[8].text + "</h3>");
+        $('#articolo3').append("<img src=" + articolo[9].text + ">");
+        $('#articolo3').append("<h4><span class="+"'label label-primary tech'"+">" + articolo[10].text + "</span></h4>");		 
+		$('#articolo3').append("<p>" + articolo[11].text + "</p>");
 
-      }});
+		$('#articolo4').append("<h3>" + articolo[12].text + "</h3>");
+        $('#articolo4').append("<img src=" + articolo[13].text + ">");
+        $('#articolo4').append("<h4><span class="+"'label label-primary tech'"+">" + articolo[14].text + "</span></h4>");		 
+		$('#articolo4').append("<p>" + articolo[15].text + "</p>");
 
-$.ajax({
-	url:'art3.json',
-	method: 'GET',
-	dataType: 'json',
-	success: function (articolo){ 
-	
-        $('#articolo3').append("<h3>" + articolo[0].text + "</h3>");
-        $('#articolo3').append("<img src=" + articolo[1].text + ">");
-        $('#articolo3').append("<h4><span class="+"'label label-primary tech'"+">" + articolo[2].text + "</span></h4>");		 
-		$('#articolo3').append("<p>" + articolo[3].text + "</p>");
-		
-
-      }});
-
-$.ajax({
-	url:'art4.json',
-	method: 'GET',
-	dataType: 'json',
-	success: function (articolo){ 
-	
-        $('#articolo4').append("<h3>" + articolo[0].text + "</h3>");
-        $('#articolo4').append("<img src=" + articolo[1].text + ">");
-        $('#articolo4').append("<h4><span class="+"'label label-primary tech'"+">" + articolo[2].text + "</span></h4>");		 
-		$('#articolo4').append("<p>" + articolo[3].text + "</p>");
-		
-
-      }});
+}});
