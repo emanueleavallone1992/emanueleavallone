@@ -102,3 +102,17 @@ footer {
 .article {
   margin-bottom: 30px;
 }
+h6 {
+  padding: 15px;
+  font-size: 15px;
+}
+.btn-default2 {
+  padding: 5px 5px;
+  cursor: pointer;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 5px;
+  border-width: 1px;
+  background-color: #449d44;
+  color: white;
+}

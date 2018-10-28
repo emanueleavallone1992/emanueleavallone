@@ -9957,6 +9957,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   	});
   }*/
 
+		$('.btn, .btn-default').on('click', function (event) {
+			$(event.currentTarget).toggleClass('btn-default2');
+		});
+
 		$('#cook').on('click', function () {
 			$('.cookie').fadeOut();
 		});
@@ -9983,7 +9987,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				$('#articolo1').append("<img src=" + articolo[1].text + ">");
 				$('#articolo1').append("<h4><span class=" + "'label label-primary tech'" + ">" + articolo[2].text + "</span></h4>");
 				$('#articolo1').append("<p>" + articolo[3].text + "</p>");
-				$('#articolo1').append("<button type=" + "'button' class=" + "'btn btn-default like'>" + articolo[4].text + "</button>");
 			} });
 
 		$.ajax({
@@ -9996,7 +9999,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				$('#articolo2').append("<img src=" + articolo[1].text + ">");
 				$('#articolo2').append("<h4><span class=" + "'label label-primary tech'" + ">" + articolo[2].text + "</span></h4>");
 				$('#articolo2').append("<p>" + articolo[3].text + "</p>");
-				$('#articolo2').append("<button type=" + "'button' class=" + "'btn btn-default like'>" + articolo[4].text + "</button>");
 			} });
 
 		$.ajax({
@@ -10009,7 +10011,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				$('#articolo3').append("<img src=" + articolo[1].text + ">");
 				$('#articolo3').append("<h4><span class=" + "'label label-primary tech'" + ">" + articolo[2].text + "</span></h4>");
 				$('#articolo3').append("<p>" + articolo[3].text + "</p>");
-				$('#articolo3').append("<button type=" + "'button' class=" + "'btn btn-default like'>" + articolo[4].text + "</button>");
 			} });
 
 		$.ajax({
@@ -10022,6 +10023,5 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				$('#articolo4').append("<img src=" + articolo[1].text + ">");
 				$('#articolo4').append("<h4><span class=" + "'label label-primary tech'" + ">" + articolo[2].text + "</span></h4>");
 				$('#articolo4').append("<p>" + articolo[3].text + "</p>");
-				$('#articolo4').append("<button type=" + "'button' class=" + "'btn btn-default like'>" + articolo[4].text + "</button>");
 			} });
 	}, { "jquery": 1 }] }, {}, [2]);
