@@ -1,0 +1,155 @@
+    
+
+@color-1: #223a48; /*blu notte*/
+@color-2: #008CBA; /**/
+@color-3: transparent;/*sfondo trasparente per il like*/
+@color-4: #e9ecef; /*sfondo di hello world*/
+@color-5: black;
+@color-6: white;
+@color-7: #337ab7;
+@color-8: #449d44;
+@margin0: 0px;
+@bordocurvo: 5px;
+@curs: pointer;
+@w100: 100%;
+@p1: 10px 0px 3px 60px;
+@p0: 0px;
+@p2: 0px 50px 50px 50px;
+@m4: 4px 4px;
+@p510: 5px 10px;
+@cp: pointer;
+@bc: grey;
+@pl60: 60px;
+
+header {
+	margin: @margin0;
+	padding: @p1;
+	background-color: @color-1;
+	color: @color-2; 
+}
+.project{
+	color: @color-4;
+	padding: @p0;
+}
+.hero-text {
+	margin: @margin0;
+	padding:@p2;
+	color: @color-4;
+} 
+a {
+	background-color: @color-2;
+	
+	margin: @m4;
+
+	cursor: @curs;
+	border-radius: @bordocurvo;
+}
+	
+img{
+	width: @w100;
+	display: inline-block;	
+}
+
+.like{
+	
+	padding: @p510;
+	cursor: @cp;
+	border-style: solid;
+	border-color: @bc;
+	border-radius: @bordocurvo;
+	border-width: 1px;
+	background-color: @color-3;
+	color: @color-5;
+}
+
+
+section{
+	float:left;
+	background-color: @color-6;
+}
+footer{
+	padding: 15px;
+	margin-bottom: 35px;
+	padding-left: @pl60;
+	padding-right: @pl60; 
+
+}
+.cookie{
+	margin: @margin0;
+	padding-left: pl60;
+	background-color:  @color-1;
+	color: @color-6;
+	position: fixed;
+	bottom: 0%;
+	width: @w100;
+	z-index: 90;
+}
+#cook{
+
+	color: @color-7;
+	text-decoration: none;
+	cursor: @curs;
+	background-color: @color-3;
+	border: 0;
+	margin: 0;
+	padding: 0;
+
+} 
+.display-4{
+	font-weight: 400;
+}
+.row{
+	
+	padding-left: @pl60;
+	padding-right: @pl60;
+	position: relative;
+	margin-right: 0px;
+	margin-left: 0px;
+	
+}
+.jumbotron{
+	padding: 60px 90px 60px 60px;
+	margin-bottom: 50px;
+}
+
+.container {
+	padding-right: @pl60;
+	padding-left: @pl60;
+}
+.tech{
+	background-color:  @color-7;
+	display: inline;
+	padding: .2em .6em .3em;
+	font-size: 50%;
+	font-weight: 700;
+	line-height: 1;
+	color: @color-6;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25em;
+
+}
+.lead{
+	font-weight: 400;
+}
+.article{
+	margin-bottom: 30px;
+}
+
+h6{
+	padding: 15px;
+	font-size: 15px;
+}
+.btn-default2{
+
+	padding: @p510;
+	cursor: @cp;
+	border-style: solid;
+	border-color: grey;
+	border-radius: @bordocurvo;
+	border-width: 1px;
+	background-color: @color-8;
+	color: @color-6;
+
+}
