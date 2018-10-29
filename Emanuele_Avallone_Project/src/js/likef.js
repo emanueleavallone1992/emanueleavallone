@@ -1,4 +1,6 @@
 const $=require('jquery');
+const Mustache=require ('Mustache');
+doAjax();
 
 //raccolgo tutti gli elementi della classe like
 var like = document.getElementsByClassName('like');
@@ -19,7 +21,7 @@ var like = document.getElementsByClassName('like');
 			
 	});
 }*/
-
+$(document).ajaxComplete(function(){
 $('.btn, .btn-default').on('click',event =>{
 	$(event.currentTarget).toggleClass('btn-default2');
 });
@@ -27,14 +29,14 @@ $('.btn, .btn-default').on('click',event =>{
 $('#cook').on('click', function(){
     $('.cookie').fadeOut('slow');
 });
-
-
+});
+function doAjax(){
 $.ajax({
 	url:'articoli.json',
 	method: 'GET',
 	dataType: 'json',
 	success: function (articolo){ 
-	
+	/*
         $('#articolo1').append("<h3>" + articolo[0].text + "</h3>");
         $('#articolo1').append("<img src=" + articolo[1].text + ">");
         $('#articolo1').append("<h4><span class="+"'label label-primary tech'"+">" + articolo[2].text + "</span></h4>");		 
@@ -53,6 +55,12 @@ $.ajax({
 		$('#articolo4').append("<h3>" + articolo[12].text + "</h3>");
         $('#articolo4').append("<img src=" + articolo[13].text + ">");
         $('#articolo4').append("<h4><span class="+"'label label-primary tech'"+">" + articolo[14].text + "</span></h4>");		 
-		$('#articolo4').append("<p>" + articolo[15].text + "</p>");
+		$('#articolo4').append("<p>" + articolo[15].text + "</p>");*/
+
+		var template =$('#template').html();
+		var render = Mustache.render(template,articolo);
+		$('#riempimento').html(render);
+
 
 }});
+};

@@ -28,34 +28,28 @@
 
 
 
-	<container class="row">
-				<article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 article">
-				<section id="articolo1">
+	<container id="riempimento" class="row">
+		<script id="template" type="x-tmpl-mustache">
 
-				</section>
+		{{#article}}
+				<article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 article">
+					<h3> {{title}}</h3>
+					<img src="{{img}}">
+					<h4><span class="label label-primary tech">{{tech}}</span></h4>
+					<p>{{descr}}</p>
+				{{^like}}
 				<button type="button" class="btn btn-default like">like</button>
+				{{/like}}
+				{{#like}}
+				<button type="button" class="btn btn-default like">like</button>
+				{{/like}}
+
 				</article>
+				{{/article}}
 
 
-				<article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 article">
-		
-					<section id="articolo2">
-					</section>
-					<button type="button" class="btn btn-default like">like</button>
-				</article>
-				
-				<article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 article">
-					<section id="articolo3">
-					</section>
-					<button type="button" class="btn btn-default like">like</button>
-				</article>
-				
 
-				<article class="col-xs-12 col-sm-6 col-md-4 col-lg-4 article">
-					<section id="articolo4">
-						</section>
-						<button type="button" class="btn btn-default like">like</button>
-					</article>
+		</script>
 				
 			
 		

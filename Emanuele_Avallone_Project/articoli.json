@@ -1,50 +1,59 @@
-[{
-    "text":"Article Title 1"
-},
 {
-    "text":"http://pngimg.com/uploads/tablet/tablet_PNG8600.png"
-},
-{
-    "text":"tech"
-},
-{
-   "text":"Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla." 
-},
-{
-    "text":"Article Title 2"
-},
-{
-    "text":"https://purepng.com/public/uploads/large/purepng.com-black-sony-xperiasmartphoneandroidgooglephoneapplication-211519340785fo6zw.png"
-},
-{
-    "text":"tech"
-},
-{
-   "text":"Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla." 
-},
+ "article": [
 
-{
-    "text":"Article Title 3"
-},
-{
-    "text":"http://api.sonymobile.com/files/sbh50-gallery-02-1240x840-15f26f05947c449637bb9f1293f5ba1e.png"
-},
-{
-    "text":"tech"
-},
-{
-   "text":"Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla." 
-},
+    {
 
-{
-    "text":"Article Title 4"
-},
-{
-    "text":"https://www.mobilefun.pk/images-big/1359298828-xperia-zl-gallery-02-1240x840-e7ab057c60930c5dcfd19f535e848580.png"
-},
-{
-    "text":"tech"
-},
-{
-   "text":"Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla." 
-}]
+  
+
+      "title": "Article 1",
+
+      "img": "http://pngimg.com/uploads/tablet/tablet_PNG8600.png",
+      "tech":"tech",
+
+      "descr": "Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
+       "like":false
+    },
+
+    {
+
+     
+
+      "title": "Article 2",
+
+      "img": "https://purepng.com/public/uploads/large/purepng.com-black-sony-xperiasmartphoneandroidgooglephoneapplication-211519340785fo6zw.png",
+
+      "tech":"tech",
+
+      "descr": "Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
+      "like":false
+    },
+
+    {
+
+     
+
+      "title": "Article 3",
+
+      "img": "http://api.sonymobile.com/files/sbh50-gallery-02-1240x840-15f26f05947c449637bb9f1293f5ba1e.png",
+
+      "tech":"tech",
+
+      "descr": "Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
+      "like":false
+    },
+
+    {
+
+      
+
+      "title": "Article 4",
+
+      "img": "https://www.mobilefun.pk/images-big/1359298828-xperia-zl-gallery-02-1240x840-e7ab057c60930c5dcfd19f535e848580.png",
+
+      "tech": "tech",
+      "descr": "Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
+      "like":false
+    }
+      ]
+
+}
