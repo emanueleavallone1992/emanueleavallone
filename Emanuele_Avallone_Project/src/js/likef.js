@@ -1,9 +1,11 @@
-const $=require('jquery');
-const Mustache=require ('Mustache');
+var $ = window.jQuery = require('jquery');
+var Mustache = require('mustache');
+var bootstrap = require('bootstrap');
 doAjax();
 
+
 //raccolgo tutti gli elementi della classe like
-var like = document.getElementsByClassName('like');
+//var like = document.getElementsByClassName('like');
 //mi giro tutti gli elemtni della classe like e se avviene l'evento click attiva la funzione likef
 
 /*for ( var i = 0; i < like.length; i++ ) {
@@ -22,9 +24,10 @@ var like = document.getElementsByClassName('like');
 	});
 }*/
 $(document).ajaxComplete(function(){
-$('.btn, .btn-default').on('click',event =>{
+$('.like').on('click',event =>{
 	$(event.currentTarget).toggleClass('btn-default2');
-});
+}); 
+
 
 $('#cook').on('click', function(){
     $('.cookie').fadeOut('slow');
@@ -32,7 +35,7 @@ $('#cook').on('click', function(){
 });
 function doAjax(){
 $.ajax({
-	url:'articoli.json',
+	url:'/article',
 	method: 'GET',
 	dataType: 'json',
 	success: function (articolo){ 

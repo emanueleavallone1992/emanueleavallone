@@ -1,12 +1,13 @@
   var express = require('express');
 var app = express();
-app.use(express.static('Dist'));
-
+app.use(express.static('dist'));
+var data= require('./articoli.json');
 const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
  
 const adapter = new FileSync('articoli.json')
 const db = low(adapter)
+
 /* 
 // Set some defaults
 db.defaults({ posts: [], user: {} })
@@ -28,8 +29,10 @@ db.get('posts')
 
 */
 
-app.get('/articoli', function (req, res) {
-  res.send(db.get('articoli'));
+app.get('/article', function (req, res) {
+  res.setHeader('Content-Type','application/json')
+  /*res.send(db.get('articoli'));*/
+  res.send(data);
 });
 
 app.listen(3000, function () {
