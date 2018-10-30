@@ -1,6 +1,7 @@
 var $ = window.jQuery = require('jquery');
 var Mustache = require('mustache');
 var bootstrap = require('bootstrap');
+const carousel= require('slick-carousel');
 doAjax();
 
 
@@ -33,6 +34,15 @@ $('#cook').on('click', function(){
     $('.cookie').fadeOut('slow');
 });
 });
+
+$('.carousel').slick({
+	dots: true,
+	infinite: true,
+	speed: 300,
+	slidesToShow:1,
+	adaptiveHeight: true
+});
+
 function doAjax(){
 $.ajax({
 	url:'/article',

@@ -39,7 +39,7 @@ grunt.initConfig({
             files: {
                 'Dist/css/mini.min.css': [
                     'node_modules/bootstrap/dist/css/bootstrap.css',
-                    'src/css/style.css']
+                    'src/css/style.css', 'node_modules/slick-carousel/slick/slick.css','node_modules/slick-carousel/slick/slick-theme.css']
             }
         }
     },	
